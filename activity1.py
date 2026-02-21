@@ -1,9 +1,5 @@
-medical=input("Do you have medical cause?(Y/N):  ").strip().upper()
-if medical=="Y":
-    print("you can attend the exam")
-else:
-    attendence=int(input("What is your attendence percentage? "))
-    if attendence>=75:
-        print("you can attend the exam")
-    else:
-        print("you cannot attend the exam")
+n=int(input("Enter a number: "))
+sum=0
+for i in range(1,n+1):
+    sum=sum+i
+print("The sum of whole numbers from 1 to",n,"is",sum)
