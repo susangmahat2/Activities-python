@@ -1,4 +1,6 @@
-string=input("Enter a string: ")
-
-reversed_string=string[::-1]
-print("The reversed string is:",reversed_string)
+while True:
+    choice=input("enter 'q' to quit")
+    if choice=='q':
+        
+        print("loop stopped")
+        
