@@ -1,8 +1,12 @@
 num=int(input("Enter a number: "))
 sum=0
-for i in range(num,0,-1):
-    sum=sum+i
+temp=num
+while temp>0:
+    digit=temp%10
+    sum=sum+digit**3
+    temp=temp//10
+if num==sum:
+    print(num,"is an armstrong number")
+else:
+    print(num,"is not an armstrong number")
     
-    print(i)
-
-print("The sum of numbers from", num, "to 1 is:", sum)
