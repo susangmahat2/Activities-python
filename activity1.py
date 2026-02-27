@@ -1,8 +1,8 @@
-n=int(input("Entre a natural number"))
-sum=0
-i=1
-while i<=n:
-    sum=sum+i
-    i=i+1
-print("The sum of first",n,"natural numbers is",sum)
-    
+word=input("Enter a word: ")
+char=input("Enter a character: ")
+
+count=0
+for i in word:
+    if i==char:
+        count+=1
+print("The character",char,"appears",count,"times in the word",word)
